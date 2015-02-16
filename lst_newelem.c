@@ -10,8 +10,8 @@ t_elem *lst_newelem(void *data)
 
 	list = (t_elem *)malloc(sizeof(t_elem));
 	
-	list->data = data;
-	list->next = NULL;
+	list->head->data = data;
+	list->head->next = NULL;
 	list->prev = NULL;
 
 	return (list);
