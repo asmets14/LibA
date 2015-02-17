@@ -1,4 +1,4 @@
-#include <liba.h>
+#include <lst.h>
 #include <stdlib.h>
 
 t_lst *lst_newlist(void)

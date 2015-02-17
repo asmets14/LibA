@@ -1,4 +1,4 @@
-#include <liba.h>
+#include <lst.h>
 
 void lst_fusion(t_elem *elem1, t_elem *elem2)
 {

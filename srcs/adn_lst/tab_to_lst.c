@@ -1,4 +1,4 @@
-#include <liba.h>
+#include <lst.h>
 #include <stdlib.h>
 
 static int ft_strlen(char *s)

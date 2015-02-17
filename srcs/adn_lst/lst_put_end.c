@@ -1,4 +1,4 @@
-#include <liba.h>
+#include <lst.h>
 #include <stdio.h>
 
 void lst_put_end(t_lst *list, t_elem *elem)
