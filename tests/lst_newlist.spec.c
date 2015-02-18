@@ -5,14 +5,14 @@ static void test00(t_test *test)
 {
 	t_lst *list;
 
-	list = lst_newlist();
+	list = adn_lst_newlist();
 	
 	mt_assert(list != 0);
 }
 
 
 
-void	suite_lst_newlist(t_suite *suite)
+void	suite_adn_lst_newlist(t_suite *suite)
 {
 	SUITE_ADD_TEST(suite, test00);
 }

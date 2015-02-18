@@ -14,6 +14,6 @@ void lst_put_end(t_lst *list, t_elem *elem)
 		tmp = list->head;
 		while(tmp->next)
 			tmp = tmp->next;
-		lst_fusion(tmp, elem);
+		adn_lst_fusion(tmp, elem);
 	}
 }

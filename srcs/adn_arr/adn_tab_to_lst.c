@@ -1,4 +1,5 @@
-#include <lst.h>
+#include <adn_lst.h>
+#include <adn_arr.h>
 #include <stdlib.h>
 
 static int ft_strlen(char *s)
@@ -37,7 +38,7 @@ t_lst *tab_to_lst(char **tab)
 	list = lst_newlist();
 	while(tab[i])
 	{
-		lst_put_end(list, lst_newelem(ft_strdup(tab[i])));
+		adn_lst_put_end(list, adn_lst_newelem(ft_strdup(tab[i])));
 		i++;
 	}
 	return (list);

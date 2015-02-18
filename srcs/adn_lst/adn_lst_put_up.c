@@ -7,5 +7,5 @@ void lst_put_up(t_lst *list, t_elem *elem)
 
 	tmp = list->head;
 	list->head = elem;
-	lst_fusion(list->head, tmp);
+	adn_lst_fusion(list->head, tmp);
 }

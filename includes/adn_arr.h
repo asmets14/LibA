@@ -8,6 +8,7 @@
 
 
 size_t adn_arr_len(void *tab);
+t_lst *adn_tab_to_lst(char **tab);
 
 
 
