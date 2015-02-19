@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   adn_arr_len.c                                      :+:      :+:    :+:   */
+/*   adn_arr_add_end.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/02/19 14:07:29 by asmets            #+#    #+#             */
-/*   Updated: 2015/02/19 14:13:35 by asmets           ###   ########.fr       */
+/*   Created: 2015/02/19 14:06:58 by asmets            #+#    #+#             */
+/*   Updated: 2015/02/19 14:09:20 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <adn_arr.h>
-#include <stddef.h>
 
-size_t adn_arr_len(void *tab)
+void adn_arr_add_end(void *arr, void *elem)
 {
-	size_t	len;
-	void	**arr;
+	void **tab;
 
-	arr = tab;
-	len = 0;
-	while (arr[len])
-		len++;
-	return (len);
+	tab = arr;
+	while (*tab)
+		tab++;
+	*tab = elem;
+	tab++;
+	*tab = NULL;
 }

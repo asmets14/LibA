@@ -1,4 +1,5 @@
-#include <lst.h>
+#include <adn_arr.h>
+#include <adn_lst.h>
 #include <moulitest.h>
 
 static void test00(t_test *test)
@@ -12,7 +13,7 @@ static void test00(t_test *test)
 	tab[2] = "nuances";
 	tab[3] = NULL;
 
-	list = adn_ab_to_lst(tab);
+	list = adn_tab_to_lst(tab);
 	mt_assert(strcmp(list->head->data, "journee") == 0);
 }
 static void test01(t_test *test)

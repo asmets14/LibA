@@ -1,5 +1,5 @@
 
-#include <lst.h>
+#include <adn_lst.h>
 #include <moulitest.h>
 
 
@@ -29,7 +29,7 @@ static void test01(t_test *test)
 	mt_assert(strcmp(lst->head->data, "parapluie") == 0);
 }
 
-void	suite_adn_st_put_up(t_suite *suite)
+void	suite_adn_lst_put_up(t_suite *suite)
 {
 	SUITE_ADD_TEST(suite, test00);
 	SUITE_ADD_TEST(suite, test01);
