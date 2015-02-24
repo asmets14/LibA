@@ -6,7 +6,7 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/19 14:21:25 by asmets            #+#    #+#             */
-/*   Updated: 2015/02/19 14:25:42 by asmets           ###   ########.fr       */
+/*   Updated: 2015/02/24 14:34:32 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ typedef struct	s_lst
 void			adn_lst_fusion(t_elem *elem1, t_elem *elem2);
 void			adn_lst_put_end(t_lst *list, t_elem *elem);
 void			adn_lst_put_up(t_lst *list, t_elem *elem);
+void			create_list_end(t_lst *list, void *name);
 t_lst			*adn_lst_newlist(void);
 t_elem			*adn_lst_newelem(void *data);
 
