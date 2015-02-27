@@ -28,7 +28,7 @@ typedef struct	s_lst
 void			adn_lst_fusion(t_elem *elem1, t_elem *elem2);
 void			adn_lst_put_end(t_lst *list, t_elem *elem);
 void			adn_lst_put_up(t_lst *list, t_elem *elem);
-void			create_list_end(t_lst *list, void *name);
+void			adn_create_lst_end(t_lst *list, void *name);
 t_lst			*adn_lst_newlist(void);
 t_elem			*adn_lst_newelem(void *data);
 
