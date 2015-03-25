@@ -31,5 +31,9 @@ void			adn_lst_put_up(t_lst *list, t_elem *elem);
 void			adn_create_lst_end(t_lst *list, void *name);
 t_lst			*adn_lst_newlist(void);
 t_elem			*adn_lst_newelem(void *data);
+int 			adn_lst_len(t_lst *list);
+void 			adn_free_lst(t_lst *list);
+
+
 
 #endif
