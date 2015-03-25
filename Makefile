@@ -6,7 +6,6 @@ C_DIR = srcs/
 O_DIR = .tmp/objects/
 
 # CC_OPTIMIZATION_FLAGS = -O2
-CC_LIBMLX = -L/usr/X11/lib -lmlx -lXext -lX11
 CC_FLAGS = -g -Wall -Wextra -Werror
 CC_HEADERS = -I ./includes -I ./srcs/libft/includes
 CC_DEBUG =
@@ -22,7 +21,7 @@ COL_GRAY = \033[1;30m
 COL_RESET = \033[0;0m
 COL_RED = \033[0;31m
 COL_GREEN = \033[0;32m
-CC_OPTIONS = $(CC_FLAGS) $(CC_HEADERS) $(CC_LIBMLX) $(CC_FLAGS_EXTRA)
+CC_OPTIONS = $(CC_FLAGS) $(CC_HEADERS) $(CC_FLAGS_EXTRA)
 
 all:
 ifeq ($(DEBUG), 1)
