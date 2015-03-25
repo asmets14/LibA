@@ -1,5 +1,5 @@
 #include "adn_lst.h"
-
+#include <stdlib.h>
 char **adn_lst_to_tab(t_lst *list,  char **tab)
 {
 	int i;
@@ -14,7 +14,7 @@ char **adn_lst_to_tab(t_lst *list,  char **tab)
 		i++;
 	}
 	tab[i] = NULL;
-	free_lst(list);
+	adn_free_lst(list);
 	list = NULL;
 	return (tab);
 }
